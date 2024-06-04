@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:(https://www.frontendmentor.io/challenges/Ping-Coming-Soon-Page-Master/hub)
+- Solution URL:(https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da/hub)
 - Live Site URL:(https://midoghareeb.github.io/Ping-Coming-Soon-Page-Master/)
 
 ## My process
