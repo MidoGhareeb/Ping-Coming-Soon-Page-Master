@@ -1,0 +1,217 @@
+/* import the google font */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Cairo:wght@200..1000&family=Caveat:wght@400..700&family=Changa:wght@200..800&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend+Deca:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+/* the variable of the main color */
+:root{
+    --Blue: hsl(223, 87%, 63%);
+    --Blue-hover: hsl(223, 85%, 74%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+    --white: hsl(0, 0%, 100%);
+}
+/* Global styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Libre Franklin", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    min-height: 100vh;
+    min-width: 100%;
+}
+/* the container styling */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+/* logo style */
+.container img{
+    width: 70px;
+}
+/* main text style */
+.container .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 15px;
+}
+.container .text h1{
+    font-size: 25px;
+    font-weight: 100;
+    color: var(--Gray);
+}
+.container .text h1 span{
+    font-weight: bolder;
+    color: var(--Very-Dark-Blue);
+}
+.container .text p{
+    font-size: 15px;
+}
+/* the input field style */
+.container form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+}
+.container form .input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.container form .input .error{
+    border: 2px solid var(--Light-Red);
+}
+.container form .input .error::placeholder{
+    color: var(--Very-Dark-Blue);
+}
+.container form .input input{
+    width: 100%;
+    padding: 10px 25px;
+    border-radius: 25px;
+    height: 50px;
+    font-size: 15px;
+    border: 1px solid var(--Pale-Blue);
+}
+.container form .input input::placeholder{
+    color: var(--Pale-Blue);
+}
+.container form .input input:focus{
+    border: 1px solid var(--Very-Dark-Blue);
+}
+.container form .input label{
+    font-size: 12px;
+    color: var(--Light-Red);
+    font-style: italic;
+}
+.hide{
+    display: none;
+}
+.container form button{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border-radius: 25px;
+    border: 0;
+    background-color: var(--Blue);
+    color: var(--white);
+    font-size: 15px;
+    box-shadow: 0 6px 20px 0px var(--Pale-Blue);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.container form button:hover{
+    background-color: var(--Blue-hover);
+}
+/* the main image style */
+.container .image{
+    width: 100%;
+    padding: 25px;
+}
+.container .image img{
+    width:100%
+}
+/* the footer style */
+.container footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.container footer .icons ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+/* social icon style */
+.container footer .icons ul li {
+    display: grid;
+    place-content: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--Gray);
+    border-radius: 50%;
+    text-decoration: none;
+    padding: 15px;
+}
+.container footer .icons i{
+    color: var(--Blue);
+    font-size: 15px;
+}
+.container footer{
+    font-size: 12px;
+    color: var(--Gray);
+}
+/* the link styling */
+.mentor{
+    text-align: center;
+    margin-top: 10px;
+    color: var(--Very-Dark-Blue);
+    font-size: 11px;
+}
+.mentor a{
+    text-decoration: none;
+    color: var(--Blue);
+    font-weight: 700;
+}
+/* media query for large screen */
+@media screen and (min-width:750px) {
+    .container{
+        margin-top: 20px;
+        width: 50%;
+    }
+    .container form{
+        flex-direction: row;
+        align-items: self-start;
+    }
+    .container form button{
+        width: 50%;
+    }
+    .container img{
+        width: 100px;
+    }
+    .container .text h1{
+        font-size: 50px;
+        font-weight: 100;
+        color: var(--Gray);
+    }
+    .container .text h1 span{
+        font-weight: bolder;
+        color: var(--Very-Dark-Blue);
+    }
+    .container .text p{
+        font-size: 20px;
+    }
+    .container form .input{
+        align-items: self-start;
+        width: 100%;
+        gap: 5px;
+    }
+    .container form .input label{
+        padding-left: 25PX;
+    }
+    .mentor{
+        font-size: 14px;
+    }
+}
